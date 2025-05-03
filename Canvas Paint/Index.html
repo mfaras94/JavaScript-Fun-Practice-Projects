@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint canvas</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      canvas {
+        position: absolute;
+        border: 2px solid black;
+        display: block;
+        bottom: 0;
+      }
+      .actionsContainer {
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="800" height="800"> </canvas>
+    <div class="actionsContainer">
+      <button class="multicolor">MultiColor OFF</button>
+
+      <button class="eraser">Eraser OFF</button>
+      <button class="rectangle">Rectangle OFF</button>
+      <button class="clear">Clear</button>
+      <button class="lineN">-</button>
+      <button class="lineP">+</button>
+      <h4 class="linesize"> </h4>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
